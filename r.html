@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recursivité</title>
+</head>
+<body>
+    
+    <h1><font color="aqua">CHECKPOINT<font></h1>
+    <style>
+      
+      body{
+        background-color: pink;
+      }
+
+    </style>
+
+
+
+      
+
+
+ <script>
+
+        // Leap Year Checker
+
+                  function LeapYear(year) {
+             if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+               return true;
+              } else {
+             return false;
+            }
+          }
+
+        //  Ticket Pricing
+
+          function priceTicket(age) {
+         if (age <= 12) {
+            return 10;
+         } else if (age >= 13 && age <= 17) {
+            return 15;
+         } else {
+            return 20;
+         }
+       }
+
+      //  Fibonacci Sequence
+
+        function fibonacci(n) {
+          if (n <= 1) {
+              return n;
+          } else {
+              return fibonacci(n - 1) + fibonacci(n - 2);
+          }
+        }
+
+
+      //   Power Function
+
+      function power(base, exponent) {
+          if (exponent === 0) {
+              return 1;
+          } else {
+              return base * power(base, exponent - 1);
+          }
+         }
+
+
+ </script>
+</body>
+</html>
